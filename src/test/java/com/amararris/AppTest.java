@@ -24,38 +24,38 @@ public class AppTest {
 
     @Test
     public void test0() throws InterruptedException { //search barre , submit buttom
-        driver.findElement(By.xpath("//*[@id=\"twotabsearchtextbox\"]")).sendKeys("smarttv");
-        driver.findElement(By.xpath("//*[@id=\"nav-search-submit-button\"]")).click();
+        driver.findElement(By.xpath("// input[@id='twotabsearchtextbox']")).sendKeys("smarttv");
+        driver.findElement(By.xpath("// input[@id='nav-search-submit-button']")).click();
 
     }
 
     @Test
     public void test1() throws InterruptedException { // create an account
-        driver.findElement(By.xpath("//*[@id=\"nav-link-accountList-nav-line-1\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"createAccountSubmit\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"ap_customer_name\"]")).sendKeys("amararris");
-        driver.findElement(By.xpath("//*[@id=\"ap_email\"]")).sendKeys("amararris77@gmail.com");
-        driver.findElement(By.xpath("//*[@id=\"ap_password\"]")).sendKeys("Ania@02102019");
-        driver.findElement(By.xpath("//*[@id=\"ap_password_check\"]")).sendKeys("Ania@02102019");
-        driver.findElement(By.xpath("//*[@id=\"continue\"]")).click();
+        driver.findElement(By.xpath("//span[@class='nav-line-2 ']")).click();
+        driver.findElement(By.xpath("//a[@id='createAccountSubmit']")).click();
+        driver.findElement(By.xpath("//input[@id='ap_customer_name']")).sendKeys("amararris");
+        driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("amararris77@gmail.com");
+        driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("Ania@02102019");
+        driver.findElement(By.xpath("//input[@id='ap_password_check']")).sendKeys("Ania@02102019");
+        driver.findElement(By.xpath("//input[@id='continue']")).click();
     }
     @Test
     public void test2() throws InterruptedException { //testing the sign in
-        driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"ap_email\"]")).sendKeys("amararris77@gmail.com");
-        driver.findElement(By.xpath("//*[@id=\"continue\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"ap_password\"]")).sendKeys("Ania@02102019");
-        driver.findElement(By.xpath("//*[@id=\"signInSubmit\"]")).click();
+        driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']")).click();
+        driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("amararris77@gmail.com");
+        driver.findElement(By.xpath("//input[@id='continue']")).click();
+        driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("Ania@02102019");
+        driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
     }
 
     @Test
     public void test3() throws InterruptedException {//testing the buttom buy again
-        driver.findElement(By.xpath("//*[@id=\"nav-link-accountList\"]/span")).click();
-        driver.findElement(By.xpath("//*[@id=\"ap_email\"]")).sendKeys("amararris77@gmail.com");
-        driver.findElement(By.xpath("//*[@id=\"continue\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"ap_password\"]")).sendKeys("Ania@02102019");
-        driver.findElement(By.xpath("//*[@id=\"signInSubmit\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"nav-xshop\"]/a[1]")).click();
+        driver.findElement(By.xpath("//span[@id='nav-link-accountList-nav-line-1']")).click();
+        driver.findElement(By.xpath("//input[@id='ap_email']")).sendKeys("amararris77@gmail.com");
+        driver.findElement(By.xpath("//input[@id='continue']")).click();
+        driver.findElement(By.xpath("//input[@id='ap_password']")).sendKeys("Ania@02102019");
+        driver.findElement(By.xpath("//input[@id='signInSubmit']")).click();
+        driver.findElement(By.xpath("//a[@data-csa-c-content-id='nav_cs_buy_again']")).click();
     }
 
     @Test
